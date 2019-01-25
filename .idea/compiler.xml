@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com.example.jpa.main" target="1.8" />
+      <module name="com.example.jpa.test" target="1.8" />
+      <module name="kr.co.episode.jpa.main" target="1.8" />
+      <module name="kr.co.episode.jpa.test" target="1.8" />
       <module name="kr.co.episode.template.main" target="1.8" />
       <module name="kr.co.episode.template.test" target="1.8" />
     </bytecodeTargetLevel>

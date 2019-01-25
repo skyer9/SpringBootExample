@@ -1,2 +1,4 @@
 rootProject.name = 'template'
+includeFlat 'SpringBootJPA'
+findProject(':SpringBootJPA')?.name = 'jpa'
 
