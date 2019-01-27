@@ -13,3 +13,7 @@ VALUES ('test', 'ROLE_USER,ROLE_ADMIN');
 --INSERT INTO user_roles (username, role) VALUES ('test', 'ROLE_ADMIN');
 INSERT INTO user_roles (username, role)
 VALUES ('maven', 'ROLE_USER');
+
+update users
+set password = '$2a$10$y9DuQlqxDw1gZPqbhD0tY.rk8ys1f7GURw41VMf8rfYYQ9cJuRXxy'
+where password='1111';
