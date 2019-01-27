@@ -1,0 +1,6 @@
+rootProject.name = 'api'
+includeFlat 'SpringBootOAuth2'
+findProject(':SpringBootOAuth2')?.name = 'oauth2'
+includeFlat 'SpringBootOAuth2'
+findProject(':SpringBootOAuth2')?.name = 'oauth2'
+
