@@ -10,7 +10,7 @@ INSERT INTO users (username, password, enabled) VALUES ('maven', '1111', true);
 
 INSERT INTO user_roles (username, role)
 VALUES ('test', 'ROLE_USER,ROLE_ADMIN');
---INSERT INTO user_roles (username, role) VALUES ('test', 'ROLE_ADMIN');
+# INSERT INTO user_roles (username, role) VALUES ('test', 'ROLE_ADMIN');
 INSERT INTO user_roles (username, role)
 VALUES ('maven', 'ROLE_USER');
 

@@ -23,7 +23,6 @@ public class User implements UserDetails {
     @Column(name = "username", nullable = false, unique = true)
     String username;
 
-
     @OneToOne
     @JoinColumn(name = "username")
     UserRoles userRoles;
