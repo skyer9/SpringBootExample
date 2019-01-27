@@ -7,8 +7,12 @@
     <bytecodeTargetLevel>
       <module name="com.example.jpa.main" target="1.8" />
       <module name="com.example.jpa.test" target="1.8" />
+      <module name="kr.co.episode.api.main" target="1.8" />
+      <module name="kr.co.episode.api.test" target="1.8" />
       <module name="kr.co.episode.jpa.main" target="1.8" />
       <module name="kr.co.episode.jpa.test" target="1.8" />
+      <module name="kr.co.episode.oauth2.main" target="1.8" />
+      <module name="kr.co.episode.oauth2.test" target="1.8" />
       <module name="kr.co.episode.template.main" target="1.8" />
       <module name="kr.co.episode.template.test" target="1.8" />
     </bytecodeTargetLevel>
