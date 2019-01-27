@@ -43,7 +43,7 @@ public class OAuth2Application {
 @Configuration
 class OAuth2WebSecurity extends WebSecurityConfigurerAdapter {
 	@Bean
-	public PasswordEncoder noOpPasswordEncoder(){
+	public PasswordEncoder myPasswordEncoder(){
 		return new BCryptPasswordEncoder();
 	}
 
@@ -65,8 +65,6 @@ class OAuth2WebSecurity extends WebSecurityConfigurerAdapter {
 
 @Configuration
 class UserAuthenticationConfigurerAdapter extends GlobalAuthenticationConfigurerAdapter {
-	//PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
-
 	@Autowired
 	@Qualifier("userDetailsService")
 	private UserDetailsService userDetailsService;
@@ -75,6 +73,7 @@ class UserAuthenticationConfigurerAdapter extends GlobalAuthenticationConfigurer
 	public void init(AuthenticationManagerBuilder auth) throws Exception {
 		auth.userDetailsService(userDetailsService);
 		/*
+		PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
 		auth.inMemoryAuthentication()
 				.withUser("test").password(encoder.encode("1111")).roles("USER")
 				.and()
