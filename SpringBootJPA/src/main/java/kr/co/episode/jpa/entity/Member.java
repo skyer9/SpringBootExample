@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Data
-@Entity
+@Entity(name = "tbl_team_member")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Member {

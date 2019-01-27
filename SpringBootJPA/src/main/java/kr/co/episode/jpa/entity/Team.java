@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.util.Collection;
 
 @Data
-@Entity
+@Entity(name = "tbl_team")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Team {
